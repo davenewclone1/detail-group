@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js" defer></script>
+    <script src="burger.js" defer></script>
+</head>
+<body>
+    
+    <div class="modal">
+        <div class="modal-content">
+            <div class="product_card__img" id="modal-img"></div>
+            <span id="modal-title"></span>
+            <div class="modad-price-content">
+                <span id="modal-price"></span><span class="modal-price-ruble">₽</span>
+            </div>
+            <span id="modal-info"></span>
+            <div id="close-btn">x</div>
+        </div>
+    </div>    
+    <div class="site">
+        <div class="header">
+            <div class="header__content">
+                <img src="imgs/Логотип.svg" class="logo">
+                <div class="nav">
+                    <a href="index.html"><span class="nav__item">Главная</span></a>
+                    <a href="aboutus.html"><span class="nav__item">О нас</span></a>
+                    <a href="catalog.html"><span class="nav__item" style="text-decoration: underline;">Каталог</span></a>
+                    <a href="contacts.html"><span class="nav__item">Контакты</span></a>
+                </div>
+                <div class="basket">
+                    <a href="basket.html"><img src="imgs/Basket.svg" alt="Basket" class="basket"></a>
+                </div>
+                <div class="burger">
+                    <a href="basket.html"><img src="imgs/burger.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-nav hidden">
+            <a href="index.html"><span class="mobile-nav__item">Главная</span></a>
+            <a href="aboutus.html"><span class="mobile-nav__item">О нас</span></a>
+            <a href="catalog.html"><span class="mobile-nav__item">Каталог</span></a>
+            <a href="contacts.html"><span class="mobile-nav__item">Контакты</span></a>
+            <a href="basket.html"><span class="mobile-nav__item">Корзина</span></a>
+        </div>
+
+        <div class="popular_items">
+            <div class="popular_items__content">
+                <span class="popular_items__header">
+                    КАТАЛОГ ТОВАРОВ
+                </span>
+                <div class="search-container">
+                    <input type="text" class="popular_items__search" placeholder="Поиск товара...">
+                </div>
+                <div class="popular_items__cards catalog_popular_items__cards">
+                    
+                    <div class="product_card catalog_product_card">
+                        <div class="product_card__img" style=""></div>
+                        <div class="product_card__text"> 
+                            <span class="product_card__header">Двигатель</span>
+                            <div class="product_card__price-content">
+                                <span class="product_card__price">10000</span><span>₽</span>
+                            </div>
+                            <span class="product_card__info">Диагональ 200px; Подходит для ручника (2.532mm * 9.2mm); подойдет для всех типов камаза, за исключением X24 Super</span>
+                            <button class="product_card__btn">В корзину</button>
+                        </div>
+                    </div>
+
+                    <div class="product_card catalog_product_card">
+                        <div class="product_card__img"></div>
+                        <div class="product_card__text"> 
+                            <span class="product_card__header">Дифференциал</span>
+                            <div class="product_card__price-content">
+                                <span class="product_card__price">5000</span><span>₽</span>
+                            </div>
+                            <span class="product_card__info">Диагональ 200px; Подходит для ручника (2.532mm * 9.2mm); подойдет для всех типов камаза, за исключением X24 Super</span>
+                            <button class="product_card__btn">В корзину</button>
+                        </div>
+                    </div>
+
+                    <div class="product_card catalog_product_card">
+                        <div class="product_card__img"></div>
+                        <div class="product_card__text"> 
+                            <span class="product_card__header">Корбюратор</span>
+                            <div class="product_card__price-content">
+                                <span class="product_card__price">12000</span><span>₽</span>
+                            </div>
+                            <span class="product_card__info">Диагональ 200px; Подходит для ручника (2.532mm * 9.2mm); подойдет для всех типов камаза, за исключением X24 Super</span>
+                            <button class="product_card__btn">В корзину</button>
+                        </div>
+                    </div>
+
+                    <div class="product_card catalog_product_card">
+                        <div class="product_card__img"></div>
+                        <div class="product_card__text"> 
+                            <span class="product_card__header">Головка</span>
+                            <div class="product_card__price-content">
+                                <span class="product_card__price">90000</span><span>₽</span>
+                            </div>
+                            <span class="product_card__info">Диагональ 200px; Подходит для ручника (2.532mm * 9.2mm); подойдет для всех типов камаза, за исключением X24 Super</span>
+                            <button class="product_card__btn">В корзину</button>
+                        </div>
+                    </div>
+
+                    <div class="product_card catalog_product_card">
+                        <div class="product_card__img"></div>
+                        <div class="product_card__text"> 
+                            <span class="product_card__header">Инжектор</span>
+                            <div class="product_card__price-content">
+                                <span class="product_card__price">52000</span><span>₽</span>
+                            </div>
+                            <span class="product_card__info">Диагональ 200px; Подходит для ручника (2.532mm * 9.2mm); подойдет для всех типов камаза, за исключением X24 Super</span>
+                            <button class="product_card__btn">В корзину</button>
+                        </div>
+                    </div>
+
+                    <div class="product_card catalog_product_card">
+                        <div class="product_card__img"></div>
+                        <div class="product_card__text"> 
+                            <span class="product_card__header">Пружина</span>
+                            <div class="product_card__price-content">
+                                <span class="product_card__price">8000</span><span>₽</span>
+                            </div>
+                            <span class="product_card__info">Диагональ 200px; Подходит для ручника (2.532mm * 9.2mm); подойдет для всех типов камаза, за исключением X24 Super</span>
+                            <button class="product_card__btn">В корзину</button>
+                        </div>
+                    </div>
+
+                    <div class="product_card catalog_product_card">
+                        <div class="product_card__img"></div>
+                        <div class="product_card__text"> 
+                            <span class="product_card__header">Аккумулятор</span>
+                            <div class="product_card__price-content">
+                                <span class="product_card__price">20400</span><span>₽</span>
+                            </div>
+                            <span class="product_card__info">Диагональ 200px; Подходит для ручника (2.532mm * 9.2mm); подойдет для всех типов камаза, за исключением X24 Super</span>
+                            <button class="product_card__btn">В корзину</button>
+                        </div>
+                    </div>
+
+                    <div class="product_card catalog_product_card">
+                        <div class="product_card__img"></div>
+                        <div class="product_card__text"> 
+                            <span class="product_card__header">Подшипники</span>
+                            <div class="product_card__price-content">
+                                <span class="product_card__price">200</span><span>₽</span>
+                            </div>
+                            <span class="product_card__info">Диагональ 200px; Подходит для ручника (2.532mm * 9.2mm); подойдет для всех типов камаза, за исключением X24 Super</span>
+                            <button class="product_card__btn">В корзину</button>
+                        </div>
+                    </div>
+
+                    <div class="product_card catalog_product_card">
+                        <div class="product_card__img"></div>
+                        <div class="product_card__text"> 
+                            <span class="product_card__header">Обрез</span>
+                            <div class="product_card__price-content">
+                                <span class="product_card__price">20300</span><span>₽</span>
+                            </div>
+                            <span class="product_card__info">Диагональ 200px; Подходит для ручника (2.532mm * 9.2mm); подойдет для всех типов камаза, за исключением X24 Super</span>
+                            <button class="product_card__btn">В корзину</button>
+                        </div>
+                    </div>
+
+                    <div class="product_card catalog_product_card">
+                        <div class="product_card__img"></div>
+                        <div class="product_card__text"> 
+                            <span class="product_card__header">Дверь</span>
+                            <div class="product_card__price-content">
+                                <span class="product_card__price">10500</span><span>₽</span>
+                            </div>
+                            <span class="product_card__info">Диагональ 200px; Подходит для ручника (2.532mm * 9.2mm); подойдет для всех типов камаза, за исключением X24 Super</span>
+                            <button class="product_card__btn">В корзину</button>
+                        </div>
+                    </div>
+
+                    <div class="product_card catalog_product_card">
+                        <div class="product_card__img"></div>
+                        <div class="product_card__text"> 
+                            <span class="product_card__header">Шины</span>
+                            <div class="product_card__price-content">
+                                <span class="product_card__price">23000</span><span>₽</span>
+                            </div>
+                            <span class="product_card__info">Диагональ 200px; Подходит для ручника (2.532mm * 9.2mm); подойдет для всех типов камаза, за исключением X24 Super</span>
+                            <button class="product_card__btn">В корзину</button>
+                        </div>
+                    </div>
+
+                    <div class="product_card catalog_product_card">
+                        <div class="product_card__img"></div>
+                        <div class="product_card__text"> 
+                            <span class="product_card__header">Ноготочки</span>
+                            <div class="product_card__price-content">
+                                <span class="product_card__price">100000</span><span>₽</span>
+                            </div>
+                            <span class="product_card__info">Диагональ 200px; Подходит для ручника (2.532mm * 9.2mm); подойдет для всех типов камаза, за исключением X24 Super</span>
+                            <button class="product_card__btn">В корзину</button>
+                        </div>
+                    </div>
+                    
+
+                </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__content">
+            <span class="footer__logo">DETAIL-GROUP</span>
+            <span class="footer__number">+7 919 649-37-20</span>
+            <div class="footer__icons">
+                <a href="https://vk.com/sawisback"><img src="imgs/Social Icons-1.svg" alt=""></a>
+                <a href="https://api.whatsapp.com/send/?phone=79196493720"><img src="imgs/Social Icons.svg" alt=""></a>
+                <a href="https://web.telegram.org/k/#@MarkHoffman2025"><img src="imgs/Social Icons-2.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
